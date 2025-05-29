@@ -1,0 +1,71 @@
+.popup-input {
+  width: clamp(20rem, 20cqi, 40rem);
+  height: 3rem;
+  display: flex;
+  column-gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+}
+
+.popup-input label {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  font-size: clamp(1.2rem, 1.2cqi, 2rem);
+  text-align: center;
+  width: clamp(8rem, 8cqi, 20rem);
+}
+
+.popup-input input[type="number"]::-webkit-outer-spin-button,
+.popup-input input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.popup-input input[type="text"],
+.popup-input input[type="number"] {
+  background-color: var(--bg-color);
+  border: none;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: clamp(1rem, 1cqi, 2rem);
+  width: clamp(12rem, 12cqi, 20rem);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  line-height: 1.2rem;
+  overflow-wrap: break-word;
+}
+
+.popup-input input[type="number"] {
+  border-top: 0.2rem solid var(--primary-color);
+  border-bottom: 0.2rem solid var(--primary-color);
+}
+
+.popup-input input[type="text"]:focus {
+  border: 0.1rem solid var(--light-bg-color);
+}
+
+.popup-input input[type="text"]::placeholder {
+  font-size: clamp(1.2rem, 1.2cqi, 2rem);
+  color: var(--text-color);
+}
+
+/* 
+.event-popup textarea {
+  width: clamp(20rem, 20cqi, 40rem);
+  aspect-ratio: 8 / 3;
+  resize: none;
+  background-color: var(--bg-color);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  font-size: clamp(1.2rem, 1.2cqi, 2rem);
+
+  line-height: 1.2rem;
+  color: var(--text-color);
+  overflow-wrap: break-word;
+} */

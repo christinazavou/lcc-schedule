@@ -1,0 +1,11 @@
+.web-container {
+  @apply tw-flex tw-flex-col tw-h-screen tw-overflow-x-hidden;
+  @apply tw-max-w-7xl;
+}
+
+main {
+  padding-top: 0;
+  /* @apply tw-w-full; */
+  @apply tw-flex-1 tw-overflow-y-scroll;
+  /* background-color: var(--light-bg-color); */
+}

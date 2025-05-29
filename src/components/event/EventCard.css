@@ -1,0 +1,68 @@
+.event-popup {
+  display: flex;
+  position: absolute;
+  /* top: 38%; */
+  /* left: 3rem; */
+  background-color: var(--bg-color);
+  /* clamp(min, preferred, max)
+  ensures the value:
+  never goes below the min, prefers the middle value, never goes above the max
+ 
+  cqi stands for “container query inline size”.
+  It's a relative unit that adapts to the size of the nearest container that has a container-type set.
+  
+  ==> Set the width based on the container’s width (21%), but don’t go below 25rem or above 40rem.
+  */
+  width: clamp(35rem, 30cqi, 50rem);
+  /* lock the width-to-height ratio of an element, no matter the screen size. */
+  aspect-ratio: 10 / 6;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem var(--light-bg-color);
+  flex-direction: column; /* so it will place content one below the other */
+  justify-content: center; /* so it will vertically center the content */
+  align-items: center; /* so it will horizontally center the content */
+}
+
+.event-popup-btn {
+  width: clamp(25rem, 25cqi, 45rem);
+  height: 4rem;
+  background-color: var(--bg-color);
+  font-family: var(--font-secondary);
+  font-size: clamp(1.5rem, 1.5cqi, 2.2rem);
+  letter-spacing: 0.1rem;
+  border: none;
+  box-shadow: 0 0 1.5rem 1rem rgba(239, 144, 17, 0.2);
+  cursor: pointer;
+}
+
+.event-popup-btn:active {
+  transform: translateY(0.1rem);
+}
+
+.close-event-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-event-popup i {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.event-time {
+  font-size: clamp(1.3rem, 1cqi, 1.6rem);
+}
+
+.event-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50);
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

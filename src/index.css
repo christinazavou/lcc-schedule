@@ -1,0 +1,102 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&display=swap');
+
+/* Define color variables */
+:root {
+  --bg-color: #78879e;
+  --light-bg-color: #ddd;
+  --primary-color: #c46a0a;
+  --secondary-color: rgba(239, 144, 17, 0.3);
+  --error-color: #ef9011;
+  --text-color: #0f1319;
+}
+
+.dark {
+  --bg-color: #0f1319;
+  --light-bg-color: #78879e;
+  --text-color: #ffffff;
+}
+
+:root {
+  --font-big: 'Bebas Neue', sans-serif;
+  --font-primary: 'Sans Neue', sans-serif;
+  --font-secondary: 'Bebas Neueu', sans-serif;
+  --font-minor: 'Comfortaa', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  /* Remove the default spacing (margin and padding) that browsers apply to elements 
+  like <h1>, <p>, <ul>, to ensure a consistent layout across different browsers. */
+  margin: 0;
+  padding: 0;
+  /* With border-box, padding and border are included in the total width/height of the element. 
+  Example: If you set width: 100px and padding: 10px:
+  With content-box (default), the element becomes 120px wide (100 + 10 left + 10 right).
+  With border-box, it stays exactly 100px, and the content area shrinks to make room for the padding.
+  */
+  box-sizing: border-box;
+  /* Removes the default focus outline (the blue ring you see when you tab into inputs or buttons). */
+  outline: none;
+  font-family: var(--font-major);
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.25rem;
+
+  /* 
+  Make rem units easier to work with. By default, most browsers set the html font size to 16px.
+  ==> 62.5% of 16px = 10px
+  Now, 1rem = 10px, which makes your rem math really clean.
+  ==> font-size: 1.6rem; means 16px and font-size: 2rem means 20px
+  */
+  /* font-size: 62.5%; */
+  /* background-color: yellow; */
+  height: 100vh;
+}
+
+body {
+  /* font-size: 100%; */
+  /* background-color: red; */
+  /* opacity: 0.5; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  @apply tw-max-w-7xl;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* for mobiles */
+@media (max-width: 500px) {
+  html {
+    /* make all elements smaller*/
+    font-size: 70%;
+  }
+}

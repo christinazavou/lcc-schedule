@@ -1,0 +1,11 @@
+.login-form {
+  font-family: var(--font-minor);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.login-form input {
+  font-family: var(--font-minor);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

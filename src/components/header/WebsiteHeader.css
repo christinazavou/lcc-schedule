@@ -1,0 +1,52 @@
+header {
+  height: 6rem;
+  /* z-index: 1000; */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-big);
+  @apply tw-w-full;
+  @apply tw-mx-auto;
+  @apply tw-shadow-sm;
+  @apply tw-px-6;
+  @apply tw-flex;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+}
+
+header nav {
+  @apply tw-space-x-8;
+}
+
+.header-toggles {
+  @apply tw-flex;
+  @apply tw-items-center;
+  @apply tw-space-x-4;
+  @apply tw-justify-center;
+  color: var(--text-color);
+}
+
+@media (max-width: 639px) {
+  header {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  header {
+    height: 5rem;
+  }
+}
+
+header a {
+  color: var(--text-white);
+}
+
+header a:hover {
+  @apply tw-underline;
+}

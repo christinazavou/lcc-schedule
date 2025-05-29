@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--light-bg-color);
+
+  width: 100%;
+
+  @apply tw-mt-10;
+  @apply tw-py-6;
+  @apply tw-px-4;
+  @apply tw-text-sm;
+  @apply tw-text-[var(--text-color)];
+  opacity: 0.8;
+  font-family: var(--font-big);
+
+  @apply tw-mt-0;
+  @apply tw-mx-auto;
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+  @apply tw-gap-2;
+}
+
+/* For screens smaller than 640px */
+@media (max-width: 639px) {
+  footer {
+    @apply tw-flex-row;
+  }
+}

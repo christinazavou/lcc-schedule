@@ -1,0 +1,7 @@
+node_modules
+dist
+.idea
+.env*
+docker-compose.yml
+package-lock.json
+webpack.config.prod.js

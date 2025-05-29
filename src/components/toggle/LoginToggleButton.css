@@ -1,0 +1,22 @@
+.toggle-modal-container {
+  @apply tw-fixed;
+  @apply tw-inset-0;
+  @apply tw-z-50;
+  @apply tw-bg-black/50;
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+}
+
+.toggle-modal-content {
+  @apply tw-mt-20;
+  @apply tw-bg-white;
+  @apply tw-relative;
+  @apply tw-w-full;
+  @apply tw-h-1/2;
+  @apply tw-rounded-lg tw-shadow-lg;
+  @apply tw-max-w-lg;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+  @apply tw-flex;
+}
