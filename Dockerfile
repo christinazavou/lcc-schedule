@@ -9,7 +9,7 @@ RUN npm i
 COPY . .
 
 ARG UI_MODE
-RUN npm run prod-build && ls -l /usr/src/app/dist
+RUN npm run build-prod && ls -l /usr/src/app/dist
 
 FROM nginx:alpine
 

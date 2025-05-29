@@ -54,6 +54,7 @@ export default {
     extensions: [".tsx", ".ts", ".js", ".json"],
 
     alias: {
+      icons: path.resolve(__dirname, 'public/icons'),
       components: path.resolve(__dirname, "src/components"),
       constants: path.resolve(__dirname, "src/constants"),
       contexts: path.resolve(__dirname, "src/contexts"),

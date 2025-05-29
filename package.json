@@ -7,7 +7,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && webpack build --config webpack.config.js --env UI_MODE=website",
-    "dev": "webpack serve --config webpack.config.js --port 3031"
+    "dev": "webpack serve --config webpack.config.js --port 3031",
+    "build-prod": "npm run clean && tsc && webpack build --config webpack.config.prod.js --env UI_MODE=website",
+    "prod": "npx serve dist-web --listen 3031"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
